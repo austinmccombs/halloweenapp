@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_25_221516) do
+ActiveRecord::Schema.define(version: 2021_09_26_005249) do
 
   create_table "guests", force: :cascade do |t|
     t.string "name"
@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 2021_09_25_221516) do
     t.boolean "playing_bp"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "partner"
+    t.string "partner_name"
   end
 
 end

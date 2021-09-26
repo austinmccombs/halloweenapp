@@ -14,6 +14,10 @@ class GuestsController < ApplicationController
     @beerpong_peeps = Guest.where(playing_bp: true)
   end
 
+  def items
+    @items = Guest.all
+  end
+
   # GET /guests/new
   def new
     @guest = Guest.new
