@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Beer Pong Peeps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @beerpong_peeps.each do |bpp| %>
+      <tr>
+        <td><%= bpp.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Guest', new_guest_path %>
